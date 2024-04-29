@@ -24,7 +24,7 @@ for (let i=0; i < contadores.length; i++){
 
 contadores[0].textContent = calculaTempo (tempoObjetivo1);
 
-function calculaTempo (tempoObjetivo) 
+function calculaTempo (tempoObjetivo) {
     let tempoAtual = new Date();
 let tempoFinal=tempoObjetivo - tempoAtual;
 let segundos=Math.floor (tempoFinal/1000);
@@ -42,7 +42,7 @@ if (tempoFinal>0){
     else {
         return "PRAZO FINALIZADO";
     }
-    
+}
     function atualizaCronometro(){
         for (let i=0; i < contadores.length; i++){
             contadores[i].textContent = calculaTempo(tempos[i]);  
